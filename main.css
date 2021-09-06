@@ -35,8 +35,8 @@ li {
 .btn:focus { outline-style: none; }
 
 .navbar {
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
+    color: var(--fontColor);
+    background-color: var(--bg);
 }
 
 .light-theme {
