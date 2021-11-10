@@ -1,19 +1,16 @@
-'use strict'
+var games = [];
 
-const switcher = document.querySelector('.btn');
+window.onload = function(){
+    console.log("Getting storage...")
+    games = localStorage.getItem("games");
+    console.log(games);
+}
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('dark-theme')
-    document.body.classList.toggle('light-theme')
+function addGame(game){
+    games.push(game);
+    localStorage.setItem("games", games);
+}
 
-    var className = document.body.className;
-    if(className == "light-theme") {
-        this.textContent = "Dark";
-    }
-    else {
-        this.textContent = "Light";
-    }
-
-    console.log('current class name: ' + className);
-
-});
+function showGames(){
+    console.log(games[0].place + ": " + games[0].people[0] + ", " + games[0].people[1]);
+}

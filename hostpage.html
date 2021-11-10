@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/CSS">
+
+    <title>Agent Undercover Host Game</title>
+
+    <nav>
+      <a class="navbar" href="index.html">Cancel</a>
+    </nav>
+</head>
+
+<body class = "body">
+  <div class="contentField" id="namesField" title="Namenfeld">
+    <div class="inputArea" id="gameNameAre">
+      <span class="inputLabel">Spielname</span>
+      <input class="inputField" id="inpField" type="text" spellcheck="false" placeholder="Unknown" value="Unbenannt">
+    </div>
+
+    <div class="inputArea" id="placeArea">
+      <span class="inputLabel">Ort</span>
+      <input class="inputField" id="inpField" type="text" spellcheck="false" placeholder="Ort">
+    </div>
+
+    <div class="inputArea" id="inpArea">
+      <span class="inputLabel">Personenname</span>
+      <input class="inputField" id="inpField" type="text" spellcheck="false" placeholder="Name">
+      <button class="removePersonBtn" onclick="removePerson(this)">x</button>
+    </div>
+
+    <button class="hostPageBtn" onclick="addPerson()" title="Add Person">Add Person</button>
+  </div>
+
+  <button class="hostPageBtn" onclick="confirmHost()" title="Finish">Finish</button>
+
+  <script src="app.js"></script>
+  <script src="game.js"></script>
+  <script src="hostGame.js"></script>
+  <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

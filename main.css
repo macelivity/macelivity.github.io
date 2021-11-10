@@ -1,53 +1,81 @@
-:root {
-    --green: #00FF00;
-    --red: #FF0000;
-    --blue: #0000FF;
-    --white: #ffffff;
-    --black: #000000;
-}
-
 * {
-    color: var(--fontColor);
-    font-family: 'Comic Sans MS';
+    color: white;
+    font-family: Arial;
+    font-size: large;
 }
 
 body {
-    background: var(--bg);
+    background: grey;
 }
-
-li {
-    list-style: circle;
-}
-.list {
-    list-style: square;
-}
-.btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-}
-.btn:focus { outline-style: none; }
 
 .navbar {
-    color: var(--fontColor);
-    background-color: var(--bg);
+    color: lightgray;
+    background-color: dimgray;
+    
+    position: absolute;
+    right: 30px;
+
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    border-color: black;
+    border-style: dashed;
 }
 
-.light-theme {
-    --bg: var(--blue);
-    --fontColor: var(--red);
-    --btnBg: var(--black);
-    --btnFontColor: var(--white);
+.selectGameBtn {
+    color: lightgray;
+    background-color: dimgray;
+    
+    position: absolute;
+    left: 50px;
+
+    width: 500px;
+
+    padding: 12px 22px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+
+    border-color: black;
+    border-style: dashed;
 }
-.dark-theme {
-    --bg: var(--black);
-    --fontColor: var(--white);
-    --btnBg: var(--white);
-    --btnFontColor: var(--black);
+
+.contentField{
+    padding-top: 75px;
+}
+
+.inputArea{
+    padding-top: 7px;
+    padding-left: 40px;
+}
+.inputField{
+    color: grey;
+    font-size: 14px;
+
+    width: 275px;
+    height: 22px;
+    padding-left: 3px;
+}
+.inputLabel{
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    width: 175px;
+}
+.removePersonBtn{
+    color: red;
+    text-align: center;
+    font-family: monospace;
+
+    height: 27px;
+    width: 27px;
+    padding: 0px;
+}
+
+
+.hostPageBtn{
+    color: darkgray;
+    background-color: black;
 }
